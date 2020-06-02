@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <input type="text" id="anhlan1" size="15" >
+    <input type="text" id="anhlan2" size="15"><br>
+    <button type="button" onclick="hamCong();">Addition(+)</button>
+    <button onclick="hamtru();">Subtration(-)</button>
+    <button onclick="hamnhan();">Multiplication(x) </button>
+    <button onclick="hamchia();">Division(/)</button>
+    <script>
+        function hamCong(){
+            let ten1 = document.getElementById('anhlan1').value;
+            let ten2 = document.getElementById('anhlan2').value;
+            let a=parseInt(ten1);
+            let b=parseInt(ten2);
+            let ketqua=a+b;
+            alert('Ket qua cua a+b la :' +ketqua);
+        }
+        function hamtru(){
+            let ten1= document.getElementById('anhlan1').value;
+            let ten2 = document.getElementById('anhlan2').value;
+            let a=parseInt(ten1);
+            let b=parseInt(ten2);
+            let ketqua=a-b;
+            alert('Ket qua cua a-b la:'+ketqua);
+        }
+        function hamnhan(){
+            let ten1=document.getElementById('anhlan1').value;
+            let ten2=document.getElementById('anhlan2').value;
+            let a=parseInt(ten1);
+            let b=parseInt(ten2);
+            let ketqua=a*b;
+            alert('Ket qua cua axb la:'+ketqua);
+          
+        }
+        function hamchia(){
+            let ten1=document.getElementById('anhlan1').value;
+            let ten2=document.getElementById('anhlan2').value;
+            let a=parseInt(ten1);
+            let b=parseInt(ten2);
+            let ketqua=a/b;
+            alert('Ket qua cua a/b la:'+ketqua);
+        }
+    </script>
+</body>
+</html>

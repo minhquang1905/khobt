@@ -4,14 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .dai{
+            width:50px;
+        }
+        table{
+            width:30%;
+        }
+        .an{background-color: orangered;}
+    </style>
 </head>
 <body>
-    <table></table>
-    <tr>>
+    <table >
+    <tr>
         <th>Amount</th>
         <th>From Currency</th>
         <th>To Currency</th>
     </tr>
+    <tr>
+        <th><input number="checkbox" name="name" id="game"></th>
+   <th>
+       <select
+        name="VietNam" id="vietnam">
+        <option value = "VND">VietNam</option>
+        <option value="EUR">EUR</option>
+       
+    </select>
+   </th>
+   <th>
+       <select name="USD" id="usd">
+           <option value="VND">VNĐ</option>
+           <option value="EUR">EUR</option>
+          
+       </select>
+   </th>
+   <th>
+       <button onclick="convert();" class="an">Convert</button>
+   </th>
+    </tr>
 </table>
+<div id='result'></div>
+<script>
+    function convert(){
+   let quang = +document.getElementById("game").value;
+    let vinh=document.getElementById("vietnam").value;
+    let duyAnh;
+    if(vinh==="VND"){
+        duyAnh = quang /20000;
+    }else{
+        duyAnh = quang *20000;
+    }
+    document.getElementById('result').innerHTML = ' Result : ' +duyAnh;
+    }
+
+</script>
 </body>
-</html>
+</html> 

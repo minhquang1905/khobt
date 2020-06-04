@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <input id="a" type="text"> <br>
+        <tr>
+            <th> <button class="aa" value="1" onclick="a.value += this.value">1</button></th>
+            <th><button class="aa" value="2" onclick="a.value += this.value">2</button></th>
+            <th><button class="aa" value="3" onclick="a.value += this.value">3</button></th>
+            <th><button class="aa" value="+" onclick="a.value += this.value">+</button></th>
+        </tr>
+        <tr>
+            <th><button class="aa" value="4" onclick="a.value += this.value">4</button></th>
+            <th><button class="aa" value="5" onclick="a.value += this.value">5</button></th>
+            <th><button class="aa" value="6" onclick="a.value += this.value">6</button></th>
+            <th><button class="aa" value="-" onclick="a.value += this.value">-</button></th>
+        </tr>
+        <tr>
+            <th> <button class="aa" value="7" onclick="a.value += this.value">7</button></th>
+            <th><button class="aa" value="8" onclick="a.value += this.value">8</button></th>
+            <th><button class="aa" value="9" onclick="a.value += this.value">9</button></th>
+            <th><button class="aa" value="*" onclick="a.value += this.value">x</button></th>
+        </tr>
+        <tr>
+            <th><button class="aa" value="C" onclick="a.value = ''">C</button></th>
+            <th><button class="aa" value="0" onclick="a.value += this.value">0</button></th>
+            <th><button onclick="a.value = eval(a.value)"> = </button></th>
+            <th><button class="aa" value="/" onclick="a.value += this.value">/</button></th>
+            <th><button onclick="a.value = a.value.slice(0, a.value.length-1)">P</button></th>
+        </tr>
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Do you love me?</h1>
+
+    <button id="vinh" onclick="alert('<3')">Yes</button>
+    <button id="vinhngu" onmouseover="randombtn()" style="position: relative;">No </button>
+
+    <script>
+        function randombtn() {
+            let a = Math.floor((Math.random() * window.innerHeight));
+            document.getElementById("vinhngu").style.top = a + 'px';
+            let b = Math.floor((Math.random() * window.innerWidth));
+            document.getElementById("vinhngu").style.left = b + 'px';
+        }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

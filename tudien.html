@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="on">
+    <button id="a" onclick="an()">Tìm kím</button>
+    <div id="hienthi">Kết quả: </div>
+    <script>
+        function an() {
+            let en = ["hello", "no", "good", "love"];
+            let vi = ["xin chào", "không", "tốt", "yêu"];
+            let check = true;
+            for (let i = 0; i < en.length; i++) {
+                if (document.getElementById('on').value == en[i]) {
+
+                    document.getElementById('hienthi').innerHTML = vi[i];
+                    check = false;
+                }
+            }
+            if (check) {
+                document.getElementById('hienthi').innerHTML = "Từ vựng của Quang có hạn nên mời bạn nhập lại^^";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
